@@ -2,83 +2,51 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Фотостудия Кадр - Профессиональная Съёмка</title>
-    <meta name="description" content="Фотостудия Кадр предлагает услуги портретной, свадебной и детской съёмки в Москве. Профессиональные фотографы и уютная атмосфера.">
+    <title>Фотостудия Кадр</title>
+    <meta name="description" content="Профессиональная фотостудия Кадр предлагает услуги портретной, свадебной и детской съёмки в Москве.">
     <style>
         * { box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            margin: 0; padding: 0;
-            background: #f4f6fa; color: #2c3e50; line-height: 1.6;
-        }
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; background: #f4f6fa; color: #2c3e50; line-height: 1.6; }
         .container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
 
-        /* HERO */
-        .hero {
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            color: #fff; padding: 100px 20px 80px; text-align: center;
-        }
+        .hero { background: linear-gradient(135deg, #667eea, #764ba2); color: #fff; padding: 100px 20px 80px; text-align: center; }
         .hero h1 { font-size: 3em; margin: 0 0 20px; font-weight: 700; }
         .hero p { font-size: 1.2em; opacity: 0.95; max-width: 640px; margin: 0 auto; }
 
-        /* FEATURES */
         .features { display: flex; gap: 24px; padding: 60px 0; flex-wrap: wrap; justify-content: center; }
-        .feature {
-            flex: 1 1 240px; max-width: 300px; background: #fff;
-            border-radius: 12px; padding: 28px;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.06); text-align: center;
-        }
+        .feature { flex: 1 1 240px; max-width: 300px; background: #fff; border-radius: 12px; padding: 28px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); text-align: center; }
         .feature h3 { color: #667eea; margin: 0 0 12px; font-size: 1.2em; }
         .feature p { margin: 0; color: #666; font-size: 0.95em; }
 
-        /* SERVICES */
         .services { padding: 60px 0; }
         .services h2 { text-align: center; margin: 0 0 40px; font-size: 2em; }
         .services-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
-        .service-card {
-            background: #fff; border-radius: 12px; padding: 24px;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
-        }
-        .service-card h3 { margin: 0 0 8px; color: #2c3e50; }
+        .service-card { background: #fff; border-radius: 12px; padding: 24px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+        .service-card h3 { margin: 0 0 8px; }
         .service-card p { margin: 0 0 12px; color: #666; font-size: 0.95em; }
         .service-card .price { font-size: 1.1em; font-weight: 700; color: #667eea; }
 
-        /* GALLERY */
         .gallery { padding: 60px 0; }
         .gallery h2 { text-align: center; margin: 0 0 40px; font-size: 2em; }
         .gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 20px; }
-        .gallery-item {
-            background: #fff; border-radius: 12px; padding: 20px;
-            text-align: center; box-shadow: 0 2px 12px rgba(0,0,0,0.06);
-        }
+        .gallery-item { background: #fff; border-radius: 12px; padding: 20px; text-align: center; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
         .gallery-item h3 { margin: 0 0 8px; color: #667eea; }
         .gallery-item p { margin: 0; color: #666; font-size: 0.9em; }
 
-        /* PRICING */
         .pricing { padding: 60px 0; }
         .pricing h2 { text-align: center; margin: 0 0 40px; font-size: 2em; }
         .pricing-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 20px; }
-        .pricing-card {
-            background: #fff; border: 2px solid #e0e0ec;
-            border-radius: 12px; padding: 28px; text-align: center;
-        }
-        .pricing-card h3 { margin: 0 0 12px; color: #2c3e50; }
+        .pricing-card { background: #fff; border: 2px solid #e0e0ec; border-radius: 12px; padding: 28px; text-align: center; }
+        .pricing-card h3 { margin: 0 0 12px; }
         .pricing-card .price { font-size: 1.6em; font-weight: 700; color: #667eea; margin: 16px 0; }
         .pricing-card p { color: #666; font-size: 0.9em; margin: 0; }
 
-        /* BOOKING */
-        .booking {
-            background: #fff; border-radius: 16px; padding: 40px;
-            margin: 40px 0; box-shadow: 0 4px 24px rgba(0,0,0,0.08);
-        }
+        .booking { background: #fff; border-radius: 16px; padding: 40px; margin: 40px 0; box-shadow: 0 4px 24px rgba(0,0,0,0.08); }
         .booking h2 { text-align: center; margin: 0 0 8px; font-size: 1.8em; }
         .booking .subtitle { text-align: center; color: #888; margin: 0 0 32px; }
 
         .calendar-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
-        .calendar-header button {
-            background: #f0f0f5; border: none; width: 40px; height: 40px;
-            border-radius: 8px; font-size: 1.2em; cursor: pointer; color: #667eea;
-        }
+        .calendar-header button { background: #f0f0f5; border: none; width: 40px; height: 40px; border-radius: 8px; font-size: 1.2em; cursor: pointer; color: #667eea; }
         .calendar-header button:hover { background: #e0e0ec; }
         .month-year { font-size: 1.2em; font-weight: 600; }
 
@@ -86,11 +54,7 @@
         .weekdays div { text-align: center; font-weight: 600; font-size: 0.85em; color: #888; padding: 8px 0; }
 
         .days { display: grid; grid-template-columns: repeat(7, 1fr); gap: 6px; }
-        .day {
-            aspect-ratio: 1/1; display: flex; align-items: center; justify-content: center;
-            border-radius: 8px; cursor: pointer; background: #f9f9fc;
-            border: 2px solid transparent; user-select: none;
-        }
+        .day { aspect-ratio: 1/1; display: flex; align-items: center; justify-content: center; border-radius: 8px; cursor: pointer; background: #f9f9fc; border: 2px solid transparent; user-select: none; }
         .day:hover:not(.disabled):not(.busy):not(.selected) { background: #eef1ff; border-color: #c7d0ff; }
         .day.empty { background: transparent; cursor: default; }
         .day.disabled { color: #ccc; cursor: not-allowed; background: transparent; }
@@ -110,24 +74,12 @@
         .booking-form h3 { text-align: center; color: #667eea; margin: 0 0 24px; }
         .form-group { margin-bottom: 18px; }
         .form-group label { display: block; margin-bottom: 6px; font-size: 0.9em; color: #555; font-weight: 600; }
-        .form-group input, .form-group textarea, .form-group select {
-            width: 100%; padding: 14px 16px; border: 2px solid #e0e0ec;
-            border-radius: 10px; font-size: 1em; font-family: inherit; background: #fafaff;
-        }
-        .form-group input:focus, .form-group textarea:focus, .form-group select:focus {
-            outline: none; border-color: #667eea; background: #fff;
-        }
+        .form-group input, .form-group textarea, .form-group select { width: 100%; padding: 14px 16px; border: 2px solid #e0e0ec; border-radius: 10px; font-size: 1em; font-family: inherit; background: #fafaff; }
+        .form-group input:focus, .form-group textarea:focus, .form-group select:focus { outline: none; border-color: #667eea; background: #fff; }
 
-        .submit-btn {
-            width: 100%; padding: 16px;
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            color: #fff; border: none; border-radius: 10px;
-            font-size: 1.05em; font-weight: 600; cursor: pointer;
-            transition: transform 0.15s;
-        }
+        .submit-btn { width: 100%; padding: 16px; background: linear-gradient(135deg, #667eea, #764ba2); color: #fff; border: none; border-radius: 10px; font-size: 1.05em; font-weight: 600; cursor: pointer; }
         .submit-btn:hover { transform: translateY(-2px); }
 
-        /* CONTACTS */
         .contacts { background: #fff; border-radius: 16px; padding: 40px; margin: 40px 0; box-shadow: 0 4px 24px rgba(0,0,0,0.06); }
         .contacts h2 { text-align: center; margin: 0 0 30px; }
         .contacts-grid { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; }
@@ -135,30 +87,16 @@
         .contact-item .label { font-size: 0.85em; color: #888; text-transform: uppercase; margin-bottom: 6px; }
         .contact-item .value { font-size: 1.05em; font-weight: 600; }
 
-        /* CTA */
-        .cta {
-            background: linear-gradient(135deg, #764ba2, #667eea);
-            color: #fff; padding: 60px 20px; text-align: center; border-radius: 16px; margin: 40px 0;
-        }
+        .cta { background: linear-gradient(135deg, #764ba2, #667eea); color: #fff; padding: 60px 20px; text-align: center; border-radius: 16px; margin: 40px 0; }
         .cta h2 { margin: 0; font-size: 1.8em; }
 
         footer { background: #2c3e50; color: #aaa; padding: 30px; text-align: center; font-size: 0.9em; margin-top: 40px; }
 
-        .success-modal {
-            display: none; position: fixed; inset: 0;
-            background: rgba(0,0,0,0.5); z-index: 1000;
-            align-items: center; justify-content: center; padding: 20px;
-        }
+        .success-modal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 1000; align-items: center; justify-content: center; padding: 20px; }
         .success-modal.active { display: flex; }
-        .success-modal .modal-content {
-            background: #fff; border-radius: 16px; padding: 40px;
-            max-width: 400px; text-align: center;
-        }
+        .success-modal .modal-content { background: #fff; border-radius: 16px; padding: 40px; max-width: 400px; text-align: center; }
         .success-modal h3 { color: #43a047; margin: 0 0 16px; }
-        .success-modal button {
-            background: #667eea; color: #fff; border: none;
-            padding: 12px 28px; border-radius: 8px; cursor: pointer; margin-top: 16px;
-        }
+        .success-modal button { background: #667eea; color: #fff; border: none; padding: 12px 28px; border-radius: 8px; cursor: pointer; margin-top: 16px; }
 
         @media (max-width: 600px) {
             .hero h1 { font-size: 2em; }
@@ -170,23 +108,177 @@
 
 
 
-<footer>Фотостудия Кадр - ваш лучший выбор для профессиональной съёмки.</footer>
+    
+    <section class="hero">
+        <h1>Добро пожаловать в фотостудию Кадр</h1>
+        <p>Ваш идеальный момент — наша задача</p>
+    </section>
+
+    
+
+
+
+    
+    <section class="container features">
+        
+        <div class="feature">
+            <h3>Профессиональные фотографы</h3>
+            <p>Наши специалисты обладают большим опытом и творческим подходом.</p>
+        </div>
+        
+        <div class="feature">
+            <h3>Современное оборудование</h3>
+            <p>Мы используем только лучшее оборудование для качественной съёмки.</p>
+        </div>
+        
+        <div class="feature">
+            <h3>Индивидуальный подход</h3>
+            <p>Мы учитываем все пожелания клиентов для достижения наилучшего результата.</p>
+        </div>
+        
+    </section>
+
+    
+
+
+
+    
+    <section class="container gallery">
+        <h2>Галерея</h2>
+        <div class="gallery-grid">
+            
+            <div class="gallery-item">
+                <h3>Свадебные моменты</h3>
+                <p>Невероятные фотографии со свадебных церемоний.</p>
+            </div>
+            
+            <div class="gallery-item">
+                <h3>Портреты</h3>
+                <p>Изящные портреты в разных стилях.</p>
+            </div>
+            
+            <div class="gallery-item">
+                <h3>Детские улыбки</h3>
+                <p>Светлые и радостные моменты детской съёмки.</p>
+            </div>
+            
+        </div>
+    </section>
+
+    
+
+
+
+    
+    <section class="container booking">
+        <h2>Забронировать день</h2>
+        <p class="subtitle">Выберите свободную дату и оставьте заявку</p>
+
+        <div class="calendar-header">
+            <button id="prevMonth" type="button">‹</button>
+            <div class="month-year" id="monthYear">—</div>
+            <button id="nextMonth" type="button">›</button>
+        </div>
+
+        <div class="weekdays">
+            <div>Пн</div><div>Вт</div><div>Ср</div><div>Чт</div>
+            <div>Пт</div><div>Сб</div><div>Вс</div>
+        </div>
+
+        <div class="days" id="days"></div>
+
+        <div class="legend">
+            <span><span class="dot free"></span> Свободно</span>
+            <span><span class="dot busy"></span> Занято</span>
+            <span><span class="dot selected"></span> Выбрано</span>
+        </div>
+
+        <form class="booking-form" id="bookingForm">
+            <h3>Вы выбрали: <span id="selectedDate"></span></h3>
+
+            <div class="form-group">
+                <label for="service">Услуга</label>
+                <select id="service" required>
+                    <option value="">— Выберите услугу —</option>
+                    
+                    <option value="Портретная съёмка">Портретная съёмка</option>
+                    
+                    <option value="Свадебная съёмка">Свадебная съёмка</option>
+                    
+                    <option value="Детская съёмка">Детская съёмка</option>
+                    
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="name">Ваше имя</label>
+                <input type="text" id="name" placeholder="Иван Иванов" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Телефон</label>
+                <input type="tel" id="phone" placeholder="+7 (___) ___-__-__" required>
+            </div>
+
+            <div class="form-group">
+                <label for="comment">Комментарий (необязательно)</label>
+                <textarea id="comment" rows="3" placeholder="Пожелания..."></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Отправить заявку</button>
+        </form>
+    </section>
+
+    
+
+
+
+    
+    <section class="container contacts">
+        <h2>Контакты</h2>
+        <div class="contacts-grid">
+            <div class="contact-item">
+                <div class="label">Компания</div>
+                <div class="value">Фотостудия Кадр</div>
+            </div>
+            <div class="contact-item">
+                <div class="label">Адрес</div>
+                <div class="value">Москва, ул. Ленина 10</div>
+            </div>
+            <div class="contact-item">
+                <div class="label">Телефон</div>
+                <div class="value">+7 999 123-45-67</div>
+            </div>
+        </div>
+    </section>
+
+    
+
+
+
+    
+    <section class="container cta">
+        <h2>Запишитесь на съёмку уже сегодня!</h2>
+    </section>
+
+    
+
+
+
+<footer>Фотостудия Кадр - Ваши лучшие моменты в наших руках.</footer>
 
 <div class="success-modal" id="successModal">
     <div class="modal-content">
         <h3>✅ Заявка отправлена!</h3>
-        <p>Спасибо! Мы свяжемся с вами в течение 15 минут для подтверждения записи.</p>
+        <p>Спасибо за ваш запрос! Мы свяжемся с вами в ближайшее время.</p>
         <button onclick="closeModal()">Хорошо</button>
     </div>
 </div>
 
 <script>
-    // ВАЖНО: порт 8001
     const SERVER_URL = 'http://127.0.0.1:8001';
-
     let currentMonth = new Date();
     let selectedDate = null;
-
     const busyDates = [];
 
     const monthYearEl = document.getElementById('monthYear');
@@ -197,45 +289,34 @@
 
     function renderCalendar() {
         if (!daysEl) return;
-
         const year = currentMonth.getFullYear();
         const month = currentMonth.getMonth();
         const monthNames = ['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'];
         monthYearEl.textContent = monthNames[month] + ' ' + year;
-
         const firstDay = new Date(year, month, 1);
         const totalDays = new Date(year, month + 1, 0).getDate();
-
         let startOffset = firstDay.getDay() - 1;
         if (startOffset < 0) startOffset = 6;
-
         daysEl.innerHTML = '';
-
         for (let i = 0; i < startOffset; i++) {
             const empty = document.createElement('div');
             empty.className = 'day empty';
             daysEl.appendChild(empty);
         }
-
         const today = new Date(); today.setHours(0,0,0,0);
-
         for (let d = 1; d <= totalDays; d++) {
             const dateObj = new Date(year, month, d);
             const iso = formatISO(dateObj);
             const dayEl = document.createElement('div');
             dayEl.className = 'day';
             dayEl.textContent = d;
-
-            if (dateObj < today) {
-                dayEl.classList.add('disabled');
-            } else if (busyDates.includes(iso)) {
-                dayEl.classList.add('busy');
-            } else {
+            if (dateObj < today) { dayEl.classList.add('disabled'); }
+            else if (busyDates.includes(iso)) { dayEl.classList.add('busy'); }
+            else {
                 if (iso === formatISO(today)) dayEl.classList.add('today');
                 if (iso === selectedDate) dayEl.classList.add('selected');
                 dayEl.addEventListener('click', () => selectDate(iso, dateObj));
             }
-
             daysEl.appendChild(dayEl);
         }
     }
@@ -269,10 +350,7 @@
             const phone = document.getElementById('phone').value.trim();
             const comment = document.getElementById('comment').value.trim();
 
-            if (!selectedDate || !service || !name || !phone) {
-                alert('Заполните все поля');
-                return;
-            }
+            if (!selectedDate || !service || !name || !phone) { alert('Заполните все поля'); return; }
 
             const submitBtn = formEl.querySelector('.submit-btn');
             submitBtn.disabled = true;
@@ -284,9 +362,7 @@
                     headers: {'Content-Type': 'application/json'},
                     body: JSON.stringify({ date: selectedDate, time: '10:00', service, name, phone, comment }),
                 });
-
                 if (!response.ok) throw new Error('Ошибка сервера');
-
                 busyDates.push(selectedDate);
                 successModal.classList.add('active');
             } catch (error) {
